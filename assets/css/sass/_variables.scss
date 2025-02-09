@@ -2,7 +2,7 @@ $main-color: #ffbc13;
 $black-color: #000;
 $white-color: #fff;
 
-@mixin p($size, $height, $weight) {
+@mixin textf($size, $height, $weight) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
