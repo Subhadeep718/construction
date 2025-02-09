@@ -15,9 +15,14 @@ body {
 }
 
 p {
-  @include textf(1rem, 1rem, 400);
+  @include textf(1rem, 1.5rem, 400);
   color: $black-color;
   opacity: 60%;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", serif;
 }
 
 button.btn {
@@ -42,8 +47,16 @@ a {
 ul li {
   list-style: none;
 }
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 @import "header";
 
 main {
+  @import "hero";
 }
+
+@import "responsive";

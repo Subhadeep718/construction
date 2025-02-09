@@ -26,7 +26,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
 
       .logo_right {
         display: flex;
@@ -54,8 +54,8 @@ header {
     }
   }
   .nav_bottom {
+    background: $black-color;
     .bottom_main {
-      background: $black-color;
       display: flex;
       justify-content: space-between;
       align-items: center;
