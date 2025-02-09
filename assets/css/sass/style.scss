@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+@import "variables";
+
+header {
+  .nav_top {
+    background: $main-color;
+    .top_main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+
+      .top_left {
+        a {
+          color: $white-color;
+          margin: 0 1rem;
+          font-size: 1rem;
+          line-height: 1rem;
+          font-weight: 600;
+          i {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

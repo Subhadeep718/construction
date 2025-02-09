@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+header .nav_top {
+  background: #ffbc13;
+}
+header .nav_top .top_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+header .nav_top .top_main .top_left a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+header .nav_top .top_main .top_left a i {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
