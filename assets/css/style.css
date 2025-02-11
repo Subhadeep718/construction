@@ -218,12 +218,15 @@ main #About.section .about-main .con .text .box {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+main #About.section .about-main .con .text .box i {
+  font-size: 1rem;
+}
 main #About.section .about-main .con .text .box .box-con {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-main #About.section .about-main .con .text .box .box-con .text {
+main #About.section .about-main .con .text .box .box-con .text-con {
   text-align: left;
 }
 main #About.section .about-main .con .text .box-bottom {

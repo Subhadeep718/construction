@@ -33,11 +33,15 @@
           justify-content: space-between;
           flex-wrap: wrap;
 
+          i {
+            font-size: 1rem;
+          }
+
           .box-con {
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            .text {
+            .text-con {
               text-align: left;
             }
           }
