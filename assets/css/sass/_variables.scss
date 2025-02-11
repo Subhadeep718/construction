@@ -7,3 +7,19 @@ $white-color: #fff;
   line-height: $height;
   font-weight: $weight;
 }
+
+$center: center;
+$around: space-around;
+$between: space-between;
+$evenly: space-evenly;
+$start: flex-start;
+$end: flex-end;
+$row: row;
+$column: column;
+
+@mixin display($just, $align, $direction) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+  flex-direction: $direction;
+}
