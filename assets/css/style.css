@@ -290,6 +290,13 @@ main #services.section .services-main {
   flex-direction: column;
   position: relative;
 }
+main #services.section .services-main h2 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
 main #services.section .services-main .circle {
   position: relative;
   width: 100%;
@@ -405,6 +412,31 @@ main #services.section .services-main .circle .circle-con .text {
 }
 main .work-main {
   padding: 5rem 0;
+}
+main .work-main h2 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffbc13;
+  text-align: center;
+}
+main .work-main .hedar-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .work-main .hedar-text h2 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+main .work-main .bottom-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*------------------- MEDIA QUERRY (RESPONSIVE FOR MAXIMUM 1920PX) SECTION START ---------------*/

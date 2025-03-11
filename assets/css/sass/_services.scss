@@ -19,6 +19,11 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+    h2 {
+      @include textf(2.3rem, 2.3rem, 600);
+      margin-bottom: 1rem;
+      color: $black-color;
+    }
     .circle {
       position: relative;
       width: 100%;

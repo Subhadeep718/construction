@@ -1,3 +1,25 @@
 .work-main {
   padding: 5rem 0;
+  h2 {
+    @include textf(2.3rem, 2.3rem, 600);
+    margin-bottom: 1rem;
+    color: $main-color;
+    text-align: center;
+  }
+  .hedar-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      @include textf(2.3rem, 2.3rem, 600);
+      margin-bottom: 1rem;
+      color: $black-color;
+    }
+  }
+
+  .bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
