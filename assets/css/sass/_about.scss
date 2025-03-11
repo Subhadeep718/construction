@@ -1,17 +1,18 @@
 #About.section {
   padding: 5rem 0;
   .about-main {
-    text-align: $center;
-    h2 {
-      @include textf(2.3rem, 2.3rem, 600);
-      margin-bottom: 1rem;
-      color: $main-color;
-    }
-    p {
-      @include textf(1rem, 1rem, 400);
+    .about-text {
+      text-align: $center;
       margin-bottom: 5.1rem;
+      h2 {
+        @include textf(2.3rem, 2.3rem, 600);
+        margin-bottom: 1rem;
+        color: $main-color;
+      }
+      p {
+        @include textf(1rem, 1rem, 400);
+      }
     }
-
     .con {
       display: flex;
       justify-content: space-between;
@@ -28,12 +29,15 @@
       }
       .text {
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
         .box {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
           flex-wrap: wrap;
-          margin-bottom: 3.7rem;
+          gap: 60px 63px;
+
           .img {
             i {
               font-size: 3rem;
@@ -43,7 +47,6 @@
 
           .box-con {
             display: flex;
-            margin-bottom: 5.1rem;
 
             .text-con {
               text-align: left;
@@ -63,12 +66,27 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          gap: 39px;
           .box-con {
             padding: 1rem;
-            border: 2px solid $main-color;
+            border: 2px solid #ffbc13;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
             i {
               font-size: 3rem;
               color: $main-color;
+            }
+            .text-con {
+              h3 {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+              }
             }
           }
         }

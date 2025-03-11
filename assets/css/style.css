@@ -145,11 +145,11 @@ main #hero.section .hero-main {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 0 0;
+  align-items: center;
   position: relative;
 }
 main #hero.section .hero-main .text {
   width: 40%;
-  margin: auto;
 }
 main #hero.section .hero-main .text h1 {
   font-size: 4rem;
@@ -178,21 +178,21 @@ main #hero.section .hero-main .hero-img img {
 main #About.section {
   padding: 5rem 0;
 }
-main #About.section .about-main {
+main #About.section .about-main .about-text {
   text-align: center;
+  margin-bottom: 5.1rem;
 }
-main #About.section .about-main h2 {
+main #About.section .about-main .about-text h2 {
   font-size: 2.3rem;
   line-height: 2.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #ffbc13;
 }
-main #About.section .about-main p {
+main #About.section .about-main .about-text p {
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 400;
-  margin-bottom: 5.1rem;
 }
 main #About.section .about-main .con {
   display: flex;
@@ -212,13 +212,15 @@ main #About.section .about-main .con .img img {
 }
 main #About.section .about-main .con .text {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
 }
 main #About.section .about-main .con .text .box {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 3.7rem;
+  gap: 60px 63px;
 }
 main #About.section .about-main .con .text .box .img i {
   font-size: 3rem;
@@ -226,7 +228,6 @@ main #About.section .about-main .con .text .box .img i {
 }
 main #About.section .about-main .con .text .box .box-con {
   display: flex;
-  margin-bottom: 5.1rem;
 }
 main #About.section .about-main .con .text .box .box-con .text-con {
   text-align: left;
@@ -244,14 +245,166 @@ main #About.section .about-main .con .text .box-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 39px;
 }
 main #About.section .about-main .con .text .box-bottom .box-con {
   padding: 1rem;
   border: 2px solid #ffbc13;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 main #About.section .about-main .con .text .box-bottom .box-con i {
   font-size: 3rem;
   color: #ffbc13;
+}
+main #About.section .about-main .con .text .box-bottom .box-con .text-con h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+main #services.section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+main #services.section img.services-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+main #services.section .services-main {
+  display: flex;
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+main #services.section .services-main .circle {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 35rem;
+  margin: 0 auto;
+}
+main #services.section .services-main .circle .circle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+main #services.section .services-main .circle .circle-img::before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+main #services.section .services-main .circle .circle-img::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+main #services.section .services-main .circle .circle-img img {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+main #services.section .services-main .circle .circle-con {
+  position: absolute;
+  display: flex;
+  width: 32%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+main #services.section .services-main .circle .circle-con.con-left1 {
+  top: 13%;
+  left: 7%;
+}
+main #services.section .services-main .circle .circle-con.con-left2 {
+  top: 42%;
+  left: 4%;
+}
+main #services.section .services-main .circle .circle-con.con-left3 {
+  top: 70%;
+  left: 7%;
+}
+main #services.section .services-main .circle .circle-con.con-right1 {
+  top: 13%;
+  right: 7%;
+  flex-direction: row;
+}
+main #services.section .services-main .circle .circle-con.con-right1 .text {
+  text-align: left;
+}
+main #services.section .services-main .circle .circle-con.con-right2 {
+  top: 42%;
+  right: 4%;
+  flex-direction: row;
+}
+main #services.section .services-main .circle .circle-con.con-right2 .text {
+  text-align: left;
+}
+main #services.section .services-main .circle .circle-con.con-right3 {
+  top: 70%;
+  right: 7%;
+  flex-direction: row;
+}
+main #services.section .services-main .circle .circle-con.con-right3 .text {
+  text-align: left;
+}
+main #services.section .services-main .circle .circle-con .icon {
+  width: 100px;
+  padding: 1.3rem;
+  height: 100px;
+  border-radius: 50%;
+  background: #404040;
+}
+main #services.section .services-main .circle .circle-con .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #services.section .services-main .circle .circle-con .text {
+  text-align: right;
+}
+main .work-main {
+  padding: 5rem 0;
 }
 
 /*------------------- MEDIA QUERRY (RESPONSIVE FOR MAXIMUM 1920PX) SECTION START ---------------*/
