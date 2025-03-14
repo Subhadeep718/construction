@@ -22,7 +22,7 @@
     .testimonial-card {
       border-radius: 10px;
       box-shadow: 0px 5px 15px rgb(0 0 0 / 55%);
-      width: 30%;
+      width: 350px;
       position: relative;
 
       transition: all 0.3s ease-in-out;
@@ -63,6 +63,7 @@
 
       .con {
         width: 100%;
+        border-radius: 10px;
         padding: 1.3rem;
         background: #ffffff;
         position: relative;
