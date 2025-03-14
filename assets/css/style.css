@@ -544,12 +544,14 @@ main #Team.section .team-main h2 {
 main #Team.section .team-main .profile-con {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
 }
 main #Team.section .team-main .profile-con .team-member {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
+  width: 30%;
 }
 main #Team.section .team-main .profile-con .team-member .name {
   margin: 1.5rem 0;
@@ -593,6 +595,114 @@ main #Team.section .team-main .profile-con .team-member .image-container img {
   width: 100%;
   display: block;
   border-radius: 10px;
+}
+main .testimonials-mein {
+  display: flex;
+  width: 100%;
+  padding: 5rem 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+main .testimonials-mein h2 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffbc13;
+}
+main .testimonials-mein .testimonial-container {
+  display: flex;
+  gap: 20px;
+  margin: 2rem 0;
+  justify-content: space-between;
+  width: 100%;
+}
+main .testimonials-mein .testimonial-container .testimonial-card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.55);
+  width: 30%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+}
+main .testimonials-mein .testimonial-container .testimonial-card::before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  z-index: -1;
+  right: -7px;
+  top: -5px;
+}
+main .testimonials-mein .testimonial-container .testimonial-card::after {
+  content: "";
+  height: 4px;
+  width: 0px;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  z-index: -1;
+  left: -7px;
+  bottom: -5px;
+}
+main .testimonials-mein .testimonial-container .testimonial-card:hover::before {
+  width: 50%;
+  height: 50%;
+  background: #ffbc13;
+}
+main .testimonials-mein .testimonial-container .testimonial-card:hover::after {
+  width: 50%;
+  height: 50%;
+  background: #ffbc13;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con {
+  width: 100%;
+  padding: 1.3rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con .user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con .user .user-image {
+  width: 50px;
+  height: 50px;
+  background: lightgray;
+  border-radius: 50%;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con .user h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con .author {
+  margin-top: 10px;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con .author strong {
+  font-weight: bold;
+  color: black;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con .author span {
+  color: gray;
+}
+main .testimonials-mein .testimonial-container .testimonial-card .con p {
+  font-size: 14px;
+  color: #555;
+}
+main .testimonials-mein .owl-carousel2 {
+  margin: 5rem 0;
+}
+main .testimonials-mein .owl-carousel2 .item {
+  text-align: center;
+}
+main .testimonials-mein .owl-carousel2 .item i {
+  font-size: 3rem;
+  color: #ffbc13;
 }
 
 /*------------------- MEDIA QUERRY (RESPONSIVE FOR MAXIMUM 1920PX) SECTION START ---------------*/

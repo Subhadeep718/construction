@@ -45,14 +45,14 @@
 //   });
 
 
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel1').owlCarousel({
   loop:true,
   margin: 0,
   nav: false,
   dots: false,
   autoplay: true,
   autoplayTimeout: 5000,
-//   autoplayHoverPause: true,
+  autoplayHoverPause: true,
   responsive:{
       0:{
           items:1
@@ -62,6 +62,26 @@ $('.owl-carousel').owlCarousel({
       },
       1000:{
           items:2
+      }
+  }
+})
+$('.owl-carousel2').owlCarousel({
+  loop:true,
+  margin: 0,
+  nav: false,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:4
+      },
+      1000:{
+          items:4
       }
   }
 })

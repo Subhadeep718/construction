@@ -1,0 +1,115 @@
+.testimonials-mein {
+  display: flex;
+  width: 100%;
+  padding: 5rem 0;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  h2 {
+    @include textf(2.3rem, 2.3rem, 600);
+    margin-bottom: 1rem;
+    color: $main-color;
+  }
+  .testimonial-container {
+    display: flex;
+    gap: 20px;
+    margin: 2rem 0;
+    justify-content: space-between;
+    width: 100%;
+
+    .testimonial-card {
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgb(0 0 0 / 55%);
+      width: 30%;
+      position: relative;
+
+      transition: all 0.3s ease-in-out;
+      z-index: 0;
+
+      &::before {
+        content: "";
+        height: 4px;
+        width: 0px;
+        position: absolute;
+        transition: all 0.5s ease 0s;
+        z-index: -1;
+        right: -7px;
+        top: -5px;
+      }
+
+      &::after {
+        content: "";
+        height: 4px;
+        width: 0px;
+        position: absolute;
+        transition: all 0.5s ease 0s;
+        z-index: -1;
+        left: -7px;
+        bottom: -5px;
+      }
+
+      &:hover::before {
+        width: 50%;
+        height: 50%;
+        background: #ffbc13;
+      }
+      &:hover::after {
+        width: 50%;
+        height: 50%;
+        background: #ffbc13;
+      }
+
+      .con {
+        width: 100%;
+        padding: 1.3rem;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-bottom: 1rem;
+          .user-image {
+            width: 50px;
+            height: 50px;
+            background: lightgray;
+            border-radius: 50%;
+          }
+          h3 {
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+
+        .author {
+          margin-top: 10px;
+          strong {
+            font-weight: bold;
+            color: black;
+          }
+          span {
+            color: gray;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #555;
+        }
+      }
+    }
+  }
+  .owl-carousel2 {
+    margin: 5rem 0;
+    .item {
+      text-align: center;
+      i {
+        font-size: 3rem;
+        color: $main-color;
+      }
+    }
+  }
+}
