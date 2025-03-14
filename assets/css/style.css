@@ -417,7 +417,7 @@ main .work-main h2 {
   font-size: 2.3rem;
   line-height: 2.3rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: #ffbc13;
   text-align: center;
 }
@@ -425,6 +425,7 @@ main .work-main .hedar-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem 0;
 }
 main .work-main .hedar-text h2 {
   font-size: 2.3rem;
@@ -433,10 +434,82 @@ main .work-main .hedar-text h2 {
   margin-bottom: 1rem;
   color: #000;
 }
+main .work-main .owl-carousel .item {
+  margin: 0 1rem;
+  height: 433px;
+  position: relative;
+}
+main .work-main .owl-carousel .item img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+main .work-main .owl-carousel .item .icon {
+  position: absolute;
+  right: 6%;
+  top: 2rem;
+  background: #ffffff;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+main .work-main .owl-carousel .item .icon i {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+main .work-main .owl-carousel .item .text {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2rem;
+}
+main .work-main .owl-carousel .item .text .chip {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  width: 27%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.29);
+}
+main .work-main .owl-carousel .item .text h3 {
+  color: #ffbc13;
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  font-weight: 600;
+}
+main .work-main .owl-carousel .item .text p {
+  color: #fff;
+}
+main .work-main .owl-carousel .item .btn {
+  position: absolute;
+  bottom: 0rem;
+  right: 5%;
+  border: 2px solid;
+}
 main .work-main .bottom-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem 0;
+}
+main .work-main .bottom-text .text {
+  text-align: center;
+}
+main .work-main .bottom-text .text p {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+main .work-main .bottom-text .text h3 {
+  font-weight: 400;
+  font-size: 68px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5725490196);
 }
 
 /*------------------- MEDIA QUERRY (RESPONSIVE FOR MAXIMUM 1920PX) SECTION START ---------------*/
