@@ -511,6 +511,89 @@ main .work-main .bottom-text .text h3 {
   color: transparent;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5725490196);
 }
+main #Team.section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+main #Team.section img.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+main #Team.section .team-main {
+  display: flex;
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+main #Team.section .team-main h2 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+main #Team.section .team-main .profile-con {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+main #Team.section .team-main .profile-con .team-member {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+main #Team.section .team-main .profile-con .team-member .name {
+  margin: 1.5rem 0;
+}
+main #Team.section .team-main .profile-con .team-member .name h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+main #Team.section .team-main .profile-con .team-member .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+main #Team.section .team-main .profile-con .team-member .image-container:hover .overlay {
+  opacity: 1;
+}
+main #Team.section .team-main .profile-con .team-member .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #ff0000, transparent);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+main #Team.section .team-main .profile-con .team-member .image-container .overlay .social-icons {
+  margin-bottom: 1rem;
+}
+main #Team.section .team-main .profile-con .team-member .image-container .overlay .social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 2rem;
+}
+main #Team.section .team-main .profile-con .team-member .image-container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
 
 /*------------------- MEDIA QUERRY (RESPONSIVE FOR MAXIMUM 1920PX) SECTION START ---------------*/
 @media only screen and (max-width: 1920px) {
